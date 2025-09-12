@@ -6,7 +6,7 @@ On docs/assignment.pdf a detailed description of the exercise is given.
 
 The objective of this assignment is to test programming capabilites, control theory and simple material knowledge. This will include setting up the soft simulation software on your computer, completing the Python simulation file and giving small descriptions on the given questions.
 
-The result of this exercise will be a zip file with a .txt containing the best achieved positions together with screenshots for each target where the strain and the coordinate frame of the simulation are **clearly visible**. The zip will also contain the assignment.py and a controller.py where your implementation of a SoftBodyController class shall be present. Finally, plots for the cavity pressure values to reach the target positions shall be included. This zip will be named **lastname.firstname.zip**.
+The result of this exercise will be a zip file with a .txt (template on docs/) containing the best achieved positions together with screenshots for each target where the strain and the coordinate frame of the simulation are **clearly visible**. The zip will also contain the assignment.py and a controller.py where your implementation of a SoftBodyController class shall be present. Finally, plots for the cavity pressure values to reach the target positions shall be included. This zip will be named **lastname.firstname.zip**.
 
 <p align='Center'> <img src="docs/imgs/example.jpg" style="width:80%; height:auto;"/> </p>
 
