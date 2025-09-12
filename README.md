@@ -17,3 +17,9 @@ The installation guide of the simulation tool can be found in the following link
 Once installed, start the simulation tool and select on the GUI top-left menu **File**. Select the *assignment.py* that you have read and completed where necessary. More information can be found on the [SOFA Documentation](!https://sofa-framework.github.io/doc/using-sofa/runsofa/).
 
 <p align='Center'> <img src="docs/imgs/logo.png" style="width:60%; height:auto;"/> </p>
+
+## Problems & Related Issues
+
+If you face any problems while doing the exercise, feel free to open an issue on the matter in this repository.
+
+If you receive no response within a week and cannot resolve the issue, please send a mail to the following address **fernando.labra.caso@ltu.se** with the subject **SUPPORT : Pneumatic Actuation Controller**
