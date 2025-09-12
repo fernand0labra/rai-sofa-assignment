@@ -1,0 +1,11 @@
+TARGET [-50.0, 0.0, 50.0]   (bottom-left)
+    Achieved Position: [..., ..., ...]
+
+TARGET [-50.0, 0.0, -50.0]  (top-left)
+    Achieved Position: [..., ..., ...]
+
+TARGET [50.0, 0.0, -50.0]   (top-right)
+    Achieved Position: [..., ..., ...]
+
+TARGET [50.0, 0.0, 50.0]    (bottom-right)
+    Achieved Position: [..., ..., ...]
