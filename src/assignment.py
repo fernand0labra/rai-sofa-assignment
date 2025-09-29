@@ -5,7 +5,7 @@ from scipy import signal
 import math 
 import numpy as np
 
-from controller import SoftBodyController
+# from controller import SoftBodyController  # Uncomment this line when the controller is implemented
 
 ###
 
@@ -115,7 +115,7 @@ def createScene(rootNode):
 	finger.addObject('EulerImplicitSolver', name="Solver", rayleighStiffness="0.0", rayleighMass="0.0")
 	finger.addObject('SparseLDLSolver', name="LinearSolver")
 
-	finger.addObject('MeshVTKLoader', name='loader', filename="mesh/finger.vtu", translation = [0, 0, 0], rotation=[0, 30, 0], scale3d=[1000, 1000, 1000])
+	finger.addObject('MeshVTKLoader', name='loader', filename="meshes/finger.vtu", translation = [0, 0, 0], rotation=[0, 30, 0], scale3d=[1000, 1000, 1000])
 	finger.addObject('MechanicalObject', name='dofs', template='Vec3d', src = '@loader')
 	finger.addObject('TetrahedronSetTopologyContainer', name="topo", src ='@loader')
 	finger.addObject('TetrahedronSetTopologyModifier' ,  name="Modifier")
@@ -140,21 +140,21 @@ def createScene(rootNode):
 	# ************************************************************************************************************************************************
 	## Cavity
 	cavity1 = finger.addChild('cavity1')
-	cavity1.addObject('MeshOBJLoader', name='loader', filename='mesh/cavity1.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
+	cavity1.addObject('MeshOBJLoader', name='loader', filename='meshes/cavity1.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
 	cavity1.addObject('MeshTopology', src='@loader', name='topo')
 	cavity1.addObject('MechanicalObject', name='dofs', template='Vec3d')
 	cavity1.addObject('SurfacePressureConstraint', name='SurfaceForceField', template='Vec3d', value = 0.0, triangles='@topo.triangles', valueType='pressure')
 	cavity1.addObject('BarycentricMapping', name='mapping', mapForces=True, mapMasses=False)
 
 	cavity2 = finger.addChild('cavity2')
-	cavity2.addObject('MeshOBJLoader', name='loader', filename='mesh/cavity2.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
+	cavity2.addObject('MeshOBJLoader', name='loader', filename='meshes/cavity2.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
 	cavity2.addObject('MeshTopology', src='@loader', name='topo')
 	cavity2.addObject('MechanicalObject', name='dofs', template='Vec3d')
 	cavity2.addObject('SurfacePressureConstraint', name='SurfaceForceField', template='Vec3d', value = 0.0, triangles='@topo.triangles', valueType='pressure')
 	cavity2.addObject('BarycentricMapping', name='mapping', mapForces=True, mapMasses=False)
 
 	cavity3 = finger.addChild('cavity3')
-	cavity3.addObject('MeshOBJLoader', name='loader', filename='mesh/cavity3.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
+	cavity3.addObject('MeshOBJLoader', name='loader', filename='meshes/cavity3.obj', translation = [0, 0, 0], rotation=[0, 0, 0], scale3d=[1000, 1000, 1000])
 	cavity3.addObject('MeshTopology', src='@loader', name='topo')
 	cavity3.addObject('MechanicalObject', name='dofs', template='Vec3d')
 	cavity3.addObject('SurfacePressureConstraint', name='SurfaceForceField', template='Vec3d', value = 0.0, triangles='@topo.triangles', valueType='pressure')
