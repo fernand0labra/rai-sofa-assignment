@@ -12,6 +12,12 @@ The result of this exercise will be a zip file with a .txt (template on docs/) c
 
 ## SOFA Installation
 
+```
+OBS!
+In order to load the SofaPython3 plugin you need to select the plugin manager in the GUI on the top bar.
+A list of plugins should be shown, scroll and select SofaPython3.
+You sould then be able to load the assignment.py from the rai-sofa-assignment repository.
+```
 The installation guide of the simulation tool can be found in the following link [SOFA Framework Releases (v24.12)](https://github.com/sofa-framework/sofa/releases/tag/v24.12.00). The simplest installation is on Windows, but it is also possible to setup on Linux and MacOS (yet requires more knowledge on building software from source).
 
 Once installed, start the simulation tool and select on the GUI top-left menu **File**. Select the *assignment.py* that you have read and completed where necessary. More information can be found on the [SOFA Documentation](https://sofa-framework.github.io/doc/using-sofa/runsofa/).
